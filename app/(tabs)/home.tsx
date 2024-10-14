@@ -6,6 +6,7 @@ import {
   Image,
   Dimensions,
   ScrollView,
+  TouchableOpacity,
 } from "react-native";
 import AppCarousel from "../../components/AppCarousel";
 import Parallax from "../../components/Parallax";
@@ -38,12 +39,14 @@ export default function Screen() {
             alignItems: "center",
           }}
         >
-          <Bars3Icon
-            onPress={handleStart}
-            size={hp(5)}
-            color={"gray"}
-            style={{ paddingHorizontal: 60 }}
-          />
+          <TouchableOpacity>
+            <Bars3Icon
+              onPress={handleStart}
+              size={hp(5)}
+              color={"gray"}
+              style={{ paddingHorizontal: 60 }}
+            />
+          </TouchableOpacity>
           <Image
             source={require("../../assets/icon2.png")}
             style={{
