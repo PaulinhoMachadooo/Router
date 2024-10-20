@@ -1,5 +1,5 @@
 import {
-  FlatList,
+  Button,
   StyleSheet,
   Text,
   View,
@@ -9,14 +9,12 @@ import {
   TouchableOpacity,
   Pressable,
 } from "react-native";
-import AppCarousel from "../../components/AppCarousel";
 import Parallax from "../../components/Parallax";
 import { MagnifyingGlassIcon, Bars3Icon } from "react-native-heroicons/outline";
 import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, router } from "expo-router";
-import { Category } from "../../types/category";
 
 let width = Dimensions.get("window").width;
 
@@ -67,7 +65,29 @@ export default function Screen() {
             <Parallax />
           </View>
 
-          <Link href="/categories/3" asChild>
+          <Link href="/categories2/2" asChild>
+            <Pressable style={{ flex: 1, paddingTop: 50 }}>
+              <View
+                style={{
+                  flex: 1,
+                  width: 350,
+                  height: 60,
+                  backgroundColor: "#777",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+              >
+                <Text
+                  style={{ fontSize: 20, fontWeight: "bold", color: "#000" }}
+                  /* onPress={handleStart2} */
+                >
+                  COMIDA
+                </Text>
+              </View>
+            </Pressable>
+          </Link>
+
+          <Link href="/categories2/2" asChild>
             <Pressable style={{ flex: 1, paddingTop: 50 }}>
               <View
                 style={{
