@@ -11,3 +11,4 @@ import {
 } from "react-native";
 import { Link, router } from "expo-router";
 
+export default function botoesHome() {}

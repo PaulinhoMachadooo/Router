@@ -12,13 +12,7 @@ export const CategoryItem = ({ data }: Props) => {
 
   return (
     <Pressable onPress={handleClick} style={styles.container}>
-      <Image
-        style={styles.image}
-        source={{ uri: data.cover }}
-        resizeMode="cover"
-      />
-      <View style={styles.bg}></View>
-      <View style={styles.box}>
+      <View>
         <Text style={styles.title}>{data.title}</Text>
       </View>
     </Pressable>
@@ -28,27 +22,18 @@ export const CategoryItem = ({ data }: Props) => {
 const styles = StyleSheet.create({
   container: {
     marginBottom: 10,
-    backgroundColor: "#333333",
+    backgroundColor: "#112342",
     borderRadius: 10,
+    height: 70,
+    justifyContent: "center",
+    alignItems: "center",
   },
   image: {
     width: "100%",
     height: 70,
     borderRadius: 10,
   },
-  bg: {
-    height: 70,
-    marginTop: -70,
-    backgroundColor: "#000000",
-    opacity: 0.6,
-    borderRadius: 10,
-  },
-  box: {
-    height: 70,
-    marginTop: -70,
-    justifyContent: "center",
-    alignItems: "center",
-  },
+
   title: {
     fontSize: 24,
     color: "#FFFFFF",

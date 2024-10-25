@@ -9,11 +9,7 @@ export const ProductItem = ({ data }: Props) => {
   return (
     <Link href={`/product/${data.id}`} asChild>
       <Pressable style={styles.container}>
-        <Image
-          style={styles.img}
-          source={{ uri: data.image }}
-          resizeMode="cover"
-        />
+        <Image style={styles.img} source={{ uri: data.image }} />
         <View style={styles.info}>
           <Text style={styles.title}>{data.title}</Text>
           {/* <Text style={styles.price}>R$ {data.price.toFixed(2)}</Text> */}
