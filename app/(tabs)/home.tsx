@@ -73,16 +73,16 @@ export default function Screen() {
                   flex: 1,
                   width: 350,
                   height: 60,
-                  backgroundColor: "#777",
+                  backgroundColor: "#112342",
                   alignItems: "center",
                   justifyContent: "center",
                 }}
               >
                 <Text
-                  style={{ fontSize: 20, fontWeight: "bold", color: "#000" }}
+                  style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }}
                   /* onPress={handleStart2} */
                 >
-                  COMIDA
+                  COMIDAS
                 </Text>
               </View>
             </Pressable>
@@ -95,13 +95,13 @@ export default function Screen() {
                   flex: 1,
                   width: 350,
                   height: 60,
-                  backgroundColor: "#777",
+                  backgroundColor: "#112342",
                   alignItems: "center",
                   justifyContent: "center",
                 }}
               >
                 <Text
-                  style={{ fontSize: 20, fontWeight: "bold", color: "#000" }}
+                  style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }}
                   /* onPress={handleStart2} */
                 >
                   BEBIDAS
