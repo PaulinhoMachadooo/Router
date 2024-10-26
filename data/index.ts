@@ -9,19 +9,19 @@ export const data: Data = {
   categories: [
     {
       id: 1,
-      title: "Acadêmias",
+      title: "Academia",
     },
     {
       id: 2,
-      title: "Açougues",
+      title: "Açougue",
     },
     {
       id: 3,
-      title: "Advogados",
+      title: "Advogado",
     },
     {
       id: 4,
-      title: "Agências de Turismos",
+      title: "Agências de Turismo",
     },
     {
       id: 5,
@@ -29,7 +29,7 @@ export const data: Data = {
     },
     {
       id: 6,
-      title: "Alarmes e Seguranças",
+      title: "Alarme e Segurança",
     },
     {
       id: 7,
@@ -37,7 +37,7 @@ export const data: Data = {
     },
     {
       id: 8,
-      title: "Arquitetos",
+      title: "Arquiteto",
     },
     {
       id: 9,
@@ -49,15 +49,15 @@ export const data: Data = {
     },
     {
       id: 11,
-      title: "Associações e Cooperativas",
+      title: "Associação e Cooperativa",
     },
     {
       id: 12,
-      title: "Auto Elétricas",
+      title: "Auto Elétrica",
     },
     {
       id: 13,
-      title: "Auto Escolas",
+      title: "Auto Escola",
     },
     {
       id: 14,
@@ -65,19 +65,19 @@ export const data: Data = {
     },
     {
       id: 15,
-      title: "Barbearias",
+      title: "Barbearia",
     },
     {
       id: 16,
-      title: "Bares e Restaurantes",
+      title: "Bare e Restaurante",
     },
     {
       id: 17,
-      title: "Beleza e Estéticas",
+      title: "Beleza e Estética",
     },
     {
       id: 18,
-      title: "Borracharias",
+      title: "Borracharia",
     },
     {
       id: 19,
@@ -85,7 +85,7 @@ export const data: Data = {
     },
     {
       id: 20,
-      title: "Cabeleireiros",
+      title: "Cabeleireiro",
     },
     {
       id: 21,
@@ -93,7 +93,7 @@ export const data: Data = {
     },
     {
       id: 22,
-      title: "Cartórios",
+      title: "Cartório",
     },
     {
       id: 23,
@@ -101,19 +101,19 @@ export const data: Data = {
     },
     {
       id: 24,
-      title: "Chaveiros",
+      title: "Chaveiro",
     },
     {
       id: 25,
-      title: "Clínicas e Laboratórios",
+      title: "Clínica e Laboratório",
     },
     {
       id: 26,
-      title: "Clínicas Veterinárias",
+      title: "Clínica Veterinária",
     },
     {
       id: 27,
-      title: "Colégios e Escolas",
+      title: "Colégio e Escola",
     },
     {
       id: 28,
@@ -121,11 +121,11 @@ export const data: Data = {
     },
     {
       id: 29,
-      title: "Dentistas",
+      title: "Dentista",
     },
     {
       id: 30,
-      title: "Despachantes",
+      title: "Despachante",
     },
     {
       id: 31,
@@ -137,7 +137,7 @@ export const data: Data = {
     },
     {
       id: 33,
-      title: "Eletro Domésticos",
+      title: "Eletro Doméstico",
     },
     {
       id: 34,
@@ -169,11 +169,11 @@ export const data: Data = {
     },
     {
       id: 41,
-      title: "Fretes e Mudanças",
+      title: "Fretes e Mudança",
     },
     {
       id: 42,
-      title: "Funerárias",
+      title: "Funerária",
     },
     {
       id: 43,
@@ -253,7 +253,7 @@ export const data: Data = {
     },
     {
       id: 62,
-      title: "Ôtica e Relojoaria",
+      title: "Ótica e Relojoaria",
     },
     {
       id: 63,
@@ -309,17 +309,21 @@ export const data: Data = {
       id: 4 /*Produto*/,
       idCategory: 1 /*Categoria */,
       image: "https://encurtador.com.br/muW2y",
-      title: "Exemplo",
-      description: "Gravação ultra HD, qualidade profissional.",
+      title: "NO PAIN, NO GAIN",
+      description: "",
+      Instagram: "https://www.instagram.com",
+      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996646930"
     },
-    /* {
+     {
       id: 9,
       idCategory: 1,
-      image: "https://picsum.photos/id/8/200/200",
-      title: "Roteador Wi-Fi",
-      description: "Conexão estável, cobertura ampla, múltiplos dispositivos.",
+      image: "https://encurtador.com.br/bJeen",
+      title: "MAROMBA",
+      description: "",
+       Instagram: "https://www.instagram.com/linkedin/",
+      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996524975"
     },
-    {
+   /* {
       id: 6,
       idCategory: 1,
       image: "https://picsum.photos/id/5/200/200",

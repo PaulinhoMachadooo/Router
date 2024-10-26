@@ -6,9 +6,11 @@ import {
   StyleSheet,
   Text,
   View,
+  Linking
 } from "react-native";
 import { Button } from "../../components/button";
 import { getProductById } from "../../services/product";
+import { data } from "../../data";
 
 export default function Screen() {
   const { id } = useLocalSearchParams();
@@ -17,9 +19,7 @@ export default function Screen() {
   const product = getProductById(idProduct);
   if (!product) return router.back();
 
-  const handleBuyButton = () => {
-    alert("Você clicou no item: " + id);
-  };
+ 
 
   return (
     <SafeAreaView style={styles.container}>
@@ -32,13 +32,24 @@ export default function Screen() {
         />
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.description}>{product.description}</Text>
+        <View style={{flex:1, justifyContent: "center", alignItems:"center",}}>
+            <View style={{flex:1, paddingBottom:20, }}>
+                <Text style={{fontSize:20}} onPress={() =>{
+                  Linking.openURL(product.uriWhatsapp)
+                }}>Whatshapp</Text>
+            </View>
+            <View style={{paddingBottom:20,}}>
+                <Text style={{fontSize:20}} onPress={() =>{
+                  Linking.openURL(product.Instagram)
+                }}>Instagram</Text>
+            </View>
+        </View>
+       
         <View style={styles.priceArea}>
           {/* <Text style={styles.price}>R$ {product.price.toFixed(2)}</Text> */}
         </View>
       </ScrollView>
-      <View style={styles.buttonArea}>
-        <Button title="Comprar Agora" onPress={handleBuyButton} />
-      </View>
+    
     </SafeAreaView>
   );
 }
