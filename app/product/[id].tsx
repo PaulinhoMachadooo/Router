@@ -6,7 +6,8 @@ import {
   StyleSheet,
   Text,
   View,
-  Linking
+  Linking,
+  TouchableOpacity,
 } from "react-native";
 import { Button } from "../../components/button";
 import { getProductById } from "../../services/product";
@@ -19,8 +20,6 @@ export default function Screen() {
   const product = getProductById(idProduct);
   if (!product) return router.back();
 
- 
-
   return (
     <SafeAreaView style={styles.container}>
       <Stack.Screen options={{ title: "" }} />
@@ -32,24 +31,64 @@ export default function Screen() {
         />
         <Text style={styles.title}>{product.title}</Text>
         <Text style={styles.description}>{product.description}</Text>
-        <View style={{flex:1, justifyContent: "center", alignItems:"center",}}>
-            <View style={{flex:1, paddingBottom:20, }}>
-                <Text style={{fontSize:20}} onPress={() =>{
-                  Linking.openURL(product.uriWhatsapp)
-                }}>Whatshapp</Text>
-            </View>
-            <View style={{paddingBottom:20,}}>
-                <Text style={{fontSize:20}} onPress={() =>{
-                  Linking.openURL(product.Instagram)
-                }}>Instagram</Text>
-            </View>
+
+        <View style={{}}>
+          <View
+            style={{
+              flex: 1,
+              flexDirection: "row",
+              justifyContent: "space-around",
+              alignItems: "center",
+              paddingBottom: 30,
+            }}
+          >
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(product.uriWhatsapp);
+              }}
+            >
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={{ uri: product.imageWhats }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(product.uriInstagram);
+              }}
+            >
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={{ uri: product.imageInsta }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(product.uriFace);
+              }}
+            >
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={{ uri: product.imageFace }}
+              />
+            </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(`tel:(product.uriTel)`);
+              }}
+            >
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={{ uri: product.imageTel }}
+              />
+            </TouchableOpacity>
+          </View>
         </View>
-       
+
         <View style={styles.priceArea}>
           {/* <Text style={styles.price}>R$ {product.price.toFixed(2)}</Text> */}
         </View>
       </ScrollView>
-    
     </SafeAreaView>
   );
 }

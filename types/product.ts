@@ -5,6 +5,12 @@ export type Product = {
   title: string;
   description: string;
   /*price: number;*/
-  Instagram: string;
+  uriInstagram: string;
   uriWhatsapp: string;
+  uriFace: string;
+  uriTel: string;
+  imageWhats: string;
+  imageInsta: string;
+  imageFace: string;
+  imageTel: string;
 };

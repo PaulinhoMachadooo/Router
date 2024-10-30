@@ -22,21 +22,6 @@ export default function AppCarousel() {
       title: "Third Item",
       image: require("../assets/images/3.jpg"),
     },
-    {
-      id: 4,
-      title: "Fourth Item",
-      image: require("../assets/images/4.jpg"),
-    },
-    {
-      id: 5,
-      title: "Fifth Item",
-      image: require("../assets/images/5.jpg"),
-    },
-    {
-      id: 6,
-      title: "Sixth Item",
-      image: require("../assets/images/6.jpg"),
-    },
   ];
   return (
     <View style={{ flex: 1 }}>

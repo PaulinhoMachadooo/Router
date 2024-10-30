@@ -311,19 +311,35 @@ export const data: Data = {
       image: "https://encurtador.com.br/muW2y",
       title: "NO PAIN, NO GAIN",
       description: "",
-      Instagram: "https://www.instagram.com",
-      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996646930"
+      uriInstagram: "https://www.instagram.com",
+      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996646930",
+      uriFace: "https://www.facebook.com/?locale=pt_BR",
+      uriTel: "´+55 15996646930´",
+      imageWhats:
+        "https://images.seeklogo.com/logo-png/28/1/whatsapp-icon-logo-png_seeklogo-285144.png?v=638653749290000000",
+      imageInsta:
+        "https://img.freepik.com/vetores-gratis/icone-de-midia-social-do-vetor-instagram-7-de-junho-de-2021-banguecoque-tailandia_53876-136728.jpg?t=st=1730260292~exp=1730263892~hmac=b3c8c1bed6f921f772ca86dcf6285148a91e14d050e7870395480ba05702a5b0&w=740",
+      imageFace: "https://encurtador.com.br/PZb6X",
+      imageTel:
+        "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQuJ3G04CrVBIDSlC5bSFx-QIoymidgbHwmWg&s",
     },
-     {
+
+    {
       id: 9,
       idCategory: 1,
       image: "https://encurtador.com.br/bJeen",
       title: "MAROMBA",
       description: "",
-       Instagram: "https://www.instagram.com/linkedin/",
-      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996524975"
+      uriInstagram: "https://www.instagram.com/linkedin/",
+      uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996524975",
+      uriFace: "",
+      uriTel: "",
+      imageWhats: "",
+      imageInsta: "",
+      imageFace: "",
+      imageTel: "",
     },
-   /* {
+    /* {
       id: 6,
       idCategory: 1,
       image: "https://picsum.photos/id/5/200/200",

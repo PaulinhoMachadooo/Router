@@ -29,18 +29,6 @@ const list = [
     color: "#B3C680",
     img: require("../assets/images/3.jpg"),
   },
-  {
-    id: "4",
-    title: "Fourth Item",
-    color: "#5C6265",
-    img: require("../assets/images/4.jpg"),
-  },
-  {
-    id: "5",
-    title: "Fifth Item",
-    color: "#F5D399",
-    img: require("../assets/images/5.jpg"),
-  },
 ];
 
 function Parallax() {
