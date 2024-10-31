@@ -29,7 +29,9 @@ export default function Screen() {
           source={{ uri: product.image }}
           resizeMode="cover"
         />
-        <Text style={styles.title}>{product.title}</Text>
+        <View style={{ flex: 1, alignItems: "center" }}>
+          <Text style={styles.title}>{product.title}</Text>
+        </View>
         <Text style={styles.description}>{product.description}</Text>
 
         <View style={{}}>
@@ -49,7 +51,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={{ uri: product.imageWhats }}
+                source={require("../../assets/WHATS.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -59,7 +61,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={{ uri: product.imageInsta }}
+                source={require("../../assets/insta-01.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -69,17 +71,17 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={{ uri: product.imageFace }}
+                source={require("../../assets/face.png")}
               />
             </TouchableOpacity>
             <TouchableOpacity
               onPress={() => {
-                Linking.openURL(`tel:(product.uriTel)`);
+                Linking.openURL(`tel:${product.uriTel}`);
               }}
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={{ uri: product.imageTel }}
+                source={require("../../assets/tel.png")}
               />
             </TouchableOpacity>
           </View>
@@ -114,7 +116,6 @@ const styles = StyleSheet.create({
     fontSize: 27,
     fontWeight: "bold",
     marginBottom: 10,
-    marginLeft: 50,
   },
   description: {
     fontSize: 15,

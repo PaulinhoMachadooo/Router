@@ -9,8 +9,4 @@ export type Product = {
   uriWhatsapp: string;
   uriFace: string;
   uriTel: string;
-  imageWhats: string;
-  imageInsta: string;
-  imageFace: string;
-  imageTel: string;
 };
