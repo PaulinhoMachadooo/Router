@@ -2,6 +2,7 @@ import { Category } from "../types/category";
 import { Product } from "../types/product";
 
 type Data = {
+  filter(arg0: (val: any) => boolean): unknown;
   categories: Category[];
   products: Product[];
 };
@@ -385,4 +386,7 @@ export const data: Data = {
       description: "Voo preciso, câmera HD, controle intuitivo.",
     },*/
   ],
+  filter: function (arg0: (val: any) => boolean): unknown {
+    throw new Error("Function not implemented.");
+  }
 };
