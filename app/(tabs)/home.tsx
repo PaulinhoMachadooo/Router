@@ -15,7 +15,6 @@ import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, router } from "expo-router";
-import BotoesHome from "../../components/botoesHome";
 let width = Dimensions.get("window").width;
 
 export default function Screen() {
@@ -66,7 +65,7 @@ export default function Screen() {
           </View>
 
           {/* BOTÕES ATALHOS NA HOME */}
-          <Link href="/categories2/16" asChild>
+          <Link href="/categories2/271" asChild>
             <Pressable style={{ flex: 1, paddingTop: 50 }}>
               <View
                 style={{
@@ -88,7 +87,7 @@ export default function Screen() {
             </Pressable>
           </Link>
 
-          <Link href="/categories2/2" asChild>
+          <Link href="/categories2/161" asChild>
             <Pressable style={{ flex: 1, paddingTop: 30 }}>
               <View
                 style={{

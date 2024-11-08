@@ -22,7 +22,7 @@ export const data: Data = {
     },
     {
       id: 4,
-      title: "Agências de Turismo",
+      title: "Agência de Turismo",
     },
     {
       id: 5,
@@ -70,7 +70,11 @@ export const data: Data = {
     },
     {
       id: 16,
-      title: "Bare e Restaurante",
+      title: "Bar e Restaurante",
+    },
+    {
+      id: 161,
+      title: "Bebida",
     },
     {
       id: 17,
@@ -115,6 +119,10 @@ export const data: Data = {
     {
       id: 27,
       title: "Colégio e Escola",
+    },
+    {
+      id: 271,
+      title: "Comida",
     },
     {
       id: 28,
@@ -316,6 +324,7 @@ export const data: Data = {
       uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996646930",
       uriFace: "https://www.facebook.com/?locale=pt_BR",
       uriTel: "´+55 15996524975´",
+      uriMaps: "geo: -23.5868031,-46.6847322, 0.01, 0.01",
     },
 
     {
@@ -328,6 +337,7 @@ export const data: Data = {
       uriWhatsapp: "https://api.whatsapp.com/send?phone=5515996524975",
       uriFace: "",
       uriTel: "",
+      uriMaps: "",
     },
     /* {
       id: 6,
@@ -388,5 +398,5 @@ export const data: Data = {
   ],
   filter: function (arg0: (val: any) => boolean): unknown {
     throw new Error("Function not implemented.");
-  }
+  },
 };

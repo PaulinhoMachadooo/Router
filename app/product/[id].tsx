@@ -84,6 +84,16 @@ export default function Screen() {
                 source={require("../../assets/tel.png")}
               />
             </TouchableOpacity>
+            <TouchableOpacity
+              onPress={() => {
+                Linking.openURL(product.uriMaps);
+              }}
+            >
+              <Image
+                style={{ height: 50, width: 50 }}
+                source={require("../../assets/maps.png")}
+              />
+            </TouchableOpacity>
           </View>
         </View>
 
