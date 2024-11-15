@@ -47,9 +47,11 @@ const styles = StyleSheet.create({
     flex: 1,
     justifyContent: "center",
     overflow: "hidden",
+    alignItems: "center",
   },
   img: {
-    width: "100%",
+    width: "90%",
     height: "100%",
+    borderRadius: 10,
   },
 });

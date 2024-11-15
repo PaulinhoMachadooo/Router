@@ -15,11 +15,13 @@ import { StatusBar } from "expo-status-bar";
 import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 import { SafeAreaView } from "react-native-safe-area-context";
 import { Link, router } from "expo-router";
+import AppCarousel from "../../components/AppCarousel";
+
 let width = Dimensions.get("window").width;
 
 export default function Screen() {
   const handleStart = () => {
-    router.replace("/categories");
+    router.replace("/categories2");
   };
 
   /* const handleStart2 = () => {
@@ -61,7 +63,7 @@ export default function Screen() {
           </View>
 
           <View style={styles.container}>
-            <Parallax />
+            <AppCarousel />
           </View>
 
           {/* BOTÕES ATALHOS NA HOME */}

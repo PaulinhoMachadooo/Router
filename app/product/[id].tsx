@@ -51,7 +51,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={require("../../assets/WHATS.png")}
+                source={{ uri: product.imgWhat }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -61,7 +61,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={require("../../assets/insta-01.png")}
+                source={{ uri: product.imgInst }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -71,7 +71,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={require("../../assets/face.png")}
+                source={{ uri: product.imgFace }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -81,7 +81,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={require("../../assets/tel.png")}
+                source={{ uri: product.imgTel }}
               />
             </TouchableOpacity>
             <TouchableOpacity
@@ -91,7 +91,7 @@ export default function Screen() {
             >
               <Image
                 style={{ height: 50, width: 50 }}
-                source={require("../../assets/maps.png")}
+                source={{ uri: product.imgMaps }}
               />
             </TouchableOpacity>
           </View>
