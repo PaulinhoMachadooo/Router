@@ -3,6 +3,8 @@ import { getAllCategories } from "../../../services/category";
 import { CategoryItem } from "../../../components/category-item";
 import React, { useEffect, useState } from "react";
 import { data } from "../../../data";
+import { MagnifyingGlassIcon } from "react-native-heroicons/outline";
+import { heightPercentageToDP as hp } from "react-native-responsive-screen";
 
 export default function Screen() {
   const [categories, setList] = useState(data.categories);
@@ -30,12 +32,17 @@ export default function Screen() {
     <View style={styles.container}>
       <View
         style={{
-          backgroundColor: "#EBE9E9",
-          margin: 10,
+          backgroundColor: "#FFF",
+          margin: 20,
           borderRadius: 5,
           flexDirection: "row",
+          elevation:10,
+          justifyContent:"space-around",
+          alignItems:"center",
+          padding: 10,
         }}
       >
+        <MagnifyingGlassIcon size={hp(2.5)} color={"gray"} strokeWidth={3}/>
         <TextInput
           style={{ flex: 1, fontSize: 16, padding: 10 }}
           placeholder="Pesquisar..."

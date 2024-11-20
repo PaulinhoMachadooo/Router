@@ -102,6 +102,7 @@ export default function Screen() {
            <Text style={styles.horasDescription}> {product.horasDescription1}</Text> 
            <Text style={styles.horasDescription}> {product.horasDescription2}</Text> 
         </View>
+        
       </ScrollView>
     </SafeAreaView>
   );
@@ -137,15 +138,17 @@ const styles = StyleSheet.create({
   horasArea: {
     padding: 10,
     borderRadius: 10,
-    backgroundColor: "#CCCCCC",
+    backgroundColor: "#EBE9E9",
   },
   horas: {
     fontWeight:"bold",
     fontSize: 22,
     textAlign: "center",
+    color:"#112342"
   },
   horasDescription: {
     fontSize:15,
     textAlign: "center",
+    color:"#112342"
   },
 });
