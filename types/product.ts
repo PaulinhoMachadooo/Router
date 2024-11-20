@@ -3,8 +3,9 @@ export type Product = {
   idCategory: number;
   image: string;
   title: string;
-  description: string;
-  /*price: number;*/
+  horasDescription1: string;
+  horasDescription2: string;
+  horasTXT: string;
   uriInstagram: string;
   imgInst: string;
   uriWhatsapp: string;

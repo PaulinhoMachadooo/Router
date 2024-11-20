@@ -21,7 +21,7 @@ let width = Dimensions.get("window").width;
 
 export default function Screen() {
   const handleStart = () => {
-    router.replace("/categories2");
+    router.replace("/categories/list");
   };
 
   /* const handleStart2 = () => {
@@ -68,45 +68,57 @@ export default function Screen() {
 
           {/* BOTÕES ATALHOS NA HOME */}
           <Link href="/categories2/271" asChild>
-            <Pressable style={{ flex: 1, paddingTop: 50 }}>
+            <Pressable style={{ flex: 1, paddingTop: 50,}}>
               <View
                 style={{
-                  flex: 1,
+                  flexDirection:"row",
                   width: 350,
                   height: 60,
                   backgroundColor: "#112342",
                   alignItems: "center",
-                  justifyContent: "center",
+                  borderRadius: 10,
+                  
                 }}
               >
-                <Text
-                  style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }}
-                  /* onPress={handleStart2} */
-                >
-                  COMIDAS
-                </Text>
+                <View style={{paddingLeft:110}}>
+                      <Text
+                        style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }} 
+                      >
+                        COMIDAS
+                      </Text>
+                </View>
+                <View style={{flex:1, paddingLeft:30, paddingBottom:30}}>
+                      <Image style={{height:115, width:110,}} source={require("../../assets/LANCHE.png")}/>
+                </View>
               </View>
             </Pressable>
           </Link>
 
           <Link href="/categories2/161" asChild>
-            <Pressable style={{ flex: 1, paddingTop: 30 }}>
+            <Pressable style={{ flex: 1, paddingTop:50}}>
               <View
                 style={{
-                  flex: 1,
+                  flexDirection:"row",
                   width: 350,
                   height: 60,
                   backgroundColor: "#112342",
                   alignItems: "center",
                   justifyContent: "center",
+                  borderRadius: 10,
+                  
                 }}
               >
-                <Text
-                  style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }}
-                  /* onPress={handleStart2} */
-                >
-                  BEBIDAS
-                </Text>
+                <View style={{paddingLeft:110}}>
+                      <Text
+                        style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }} 
+                      >
+                        BEBIDAS
+                      </Text>
+                </View>
+                <View style={{flex:1, paddingLeft:30, paddingBottom:10}}>
+                      <Image style={{height:130, width:120,}} source={require("../../assets/Bebidas.png")}/>
+                </View>
+                
               </View>
             </Pressable>
           </Link>

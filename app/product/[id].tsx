@@ -32,7 +32,7 @@ export default function Screen() {
         <View style={{ flex: 1, alignItems: "center" }}>
           <Text style={styles.title}>{product.title}</Text>
         </View>
-        <Text style={styles.description}>{product.description}</Text>
+        
 
         <View style={{}}>
           <View
@@ -97,8 +97,10 @@ export default function Screen() {
           </View>
         </View>
 
-        <View style={styles.priceArea}>
-          {/* <Text style={styles.price}>R$ {product.price.toFixed(2)}</Text> */}
+        <View style={styles.horasArea}>
+           <Text style={styles.horas}> {product.horasTXT}</Text> 
+           <Text style={styles.horasDescription}> {product.horasDescription1}</Text> 
+           <Text style={styles.horasDescription}> {product.horasDescription2}</Text> 
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -132,13 +134,18 @@ const styles = StyleSheet.create({
     color: "#555555",
     marginBottom: 20,
   },
-  priceArea: {
+  horasArea: {
     padding: 10,
     borderRadius: 10,
     backgroundColor: "#CCCCCC",
   },
-  price: {
+  horas: {
+    fontWeight:"bold",
     fontSize: 22,
+    textAlign: "center",
+  },
+  horasDescription: {
+    fontSize:15,
     textAlign: "center",
   },
 });
