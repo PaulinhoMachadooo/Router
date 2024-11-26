@@ -24,9 +24,7 @@ export default function Screen() {
     router.replace("/categories/list");
   };
 
-  /* const handleStart2 = () => {
-    router.replace("/about");
-  };*/
+
   return (
     <SafeAreaView style={{ backgroundColor: "#FFF", height: "100%" }}>
       <ScrollView
@@ -66,7 +64,7 @@ export default function Screen() {
             <AppCarousel />
           </View>
 
-          {/* BOTÕES ATALHOS NA HOME */}
+      
           <Link href="/categories2/271" asChild>
             <Pressable style={{ flex: 1, paddingTop: 50,}}>
               <View

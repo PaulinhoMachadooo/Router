@@ -5,19 +5,18 @@ import { Link } from "expo-router";
 type Props = {
   data: Product;
 };
-export const ProductItem = ({ data }: Props) => {
+export function ProductItem({ data }: Props) {
   return (
     <Link href={`/product/${data.id}`} asChild>
       <Pressable style={styles.container}>
-        <Image style={styles.img} source={{ uri: data.image }} /> {/*Imagem na lista de comercios */}
+        <Image style={styles.img} source={{ uri: data.image }} /> 
         <View style={styles.info}>
           <Text style={styles.title}>{data.title}</Text>
-          {/* <Text style={styles.price}>R$ {data.price.toFixed(2)}</Text> */}
         </View>
       </Pressable>
     </Link>
   );
-};
+}
 
 const styles = StyleSheet.create({
   container: {
@@ -52,9 +51,5 @@ const styles = StyleSheet.create({
     color: "#555555",
     marginBottom: 10,
   },
-  price: {
-    fontSize: 14,
-    fontWeight: "bold",
-    textAlign: "right",
-  },
+
 });
