@@ -10,18 +10,9 @@ export default function AppCarousel() {
     {
       id: 1,
       title: "First Item",
-      image: require("../assets/images/1.jpg"),
+      image: "https://abrir.link/fONiW",
     },
-    {
-      id: 2,
-      title: "Second Item",
-      image: require("../assets/images/2.jpg"),
-    },
-    {
-      id: 3,
-      title: "Third Item",
-      image: require("../assets/images/3.jpg"),
-    },
+
   ];
   return (
     <View style={{ flex: 1 }}>
@@ -31,10 +22,10 @@ export default function AppCarousel() {
         data={list}
         autoPlay={true}
         pagingEnabled={pagingEnabled}
-        scrollAnimationDuration={1000}
+        scrollAnimationDuration={2000}
         renderItem={({ item }) => (
           <View style={styles.CarouselItem}>
-            <Image style={styles.img} source={item.image} />
+            <Image style={styles.img} src={item.image} />
           </View>
         )}
       />
