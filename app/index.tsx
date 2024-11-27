@@ -1,17 +1,15 @@
-import {
-  Image,
-  SafeAreaView,
-  StyleSheet,
-  Text,
-  TouchableOpacity,
-} from "react-native";
-import { Button } from "../components/button";
-import { router } from "expo-router";
+import { SafeAreaView, StyleSheet, Image, useWindowDimensions } from "react-native";
+import React, { useEffect } from "react";
+import { useRouter } from "expo-router";
 
 export default function Screen() {
-  const handleStart = () => {
-    router.replace("/home");
-  };
+  const router = useRouter();
+  const { width, height } = useWindowDimensions();
+  useEffect(() => {
+    setTimeout(() => {
+      router.replace("/home");
+    }, 2000);
+  }, []);
 
   return (
     <SafeAreaView style={styles.container}>
@@ -20,9 +18,7 @@ export default function Screen() {
         style={styles.logo}
         resizeMode="cover"
       />
-      <TouchableOpacity>
-        <Button title="ACESSAR" onPress={handleStart} />
-      </TouchableOpacity>
+    
     </SafeAreaView>
   );
 }
