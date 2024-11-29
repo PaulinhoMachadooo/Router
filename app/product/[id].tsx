@@ -103,6 +103,7 @@ export default function Screen() {
            <Text style={styles.horasDescription}> {product.horasDescription2}</Text> 
         </View>
         
+        
       </ScrollView>
     </SafeAreaView>
   );
