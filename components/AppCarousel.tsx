@@ -1,4 +1,4 @@
-import { View, Image, Dimensions, StyleSheet, Text } from "react-native";
+import { View, Image, Dimensions, StyleSheet, Text, TouchableOpacity } from "react-native";
 import React, { useState } from "react";
 import Carousel from "react-native-reanimated-carousel";
 
@@ -10,7 +10,7 @@ export default function AppCarousel() {
     {
       id: 1,
       title: "First Item",
-      image: "https://abrir.link/fONiW",
+      image: "https://encurtador.com.br/zxuV5",
     },
 
   ];
@@ -24,9 +24,11 @@ export default function AppCarousel() {
         pagingEnabled={pagingEnabled}
         scrollAnimationDuration={2000}
         renderItem={({ item }) => (
+       
           <View style={styles.CarouselItem}>
             <Image style={styles.img} src={item.image} />
           </View>
+        
         )}
       />
     </View>

@@ -34,7 +34,7 @@ export default function Screen() {
         style={{
           backgroundColor: "#FFF",
           margin: 20,
-          borderRadius: 5,
+          borderRadius: 30,
           flexDirection: "row",
           elevation:10,
           justifyContent:"space-around",

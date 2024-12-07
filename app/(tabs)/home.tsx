@@ -8,6 +8,7 @@ import {
   ScrollView,
   TouchableOpacity,
   Pressable,
+  Linking,
 } from "react-native";
 import Parallax from "../../components/Parallax";
 import { MagnifyingGlassIcon, Bars3Icon } from "react-native-heroicons/outline";
@@ -28,10 +29,10 @@ export default function Screen() {
   return (
     <SafeAreaView style={{ backgroundColor: "#FFF", height: "100%" }}>
       <ScrollView
-        style={{ backgroundColor: "#FFF" }}
+        style={{ backgroundColor: "" }}
         showsVerticalScrollIndicator={true}
         contentContainerStyle={{
-          paddingBottom: 50,
+          paddingBottom: 20,
         }}
       >
         <View style={{ alignItems: "center" }}>
@@ -120,6 +121,36 @@ export default function Screen() {
               </View>
             </Pressable>
           </Link>
+          
+            <Pressable onPress={() => {
+                Linking.openURL("https://www.facebook.com/groups/2314226998745714?locale=pt_BR");
+              }} style={{ flex: 1, paddingTop:50}}>
+              <View
+                style={{
+                  flexDirection:"row",
+                  width: 350,
+                  height: 60,
+                  backgroundColor: "#112342",
+                  alignItems: "center",
+                  justifyContent: "center",
+                  borderRadius: 10,
+                  
+                }}
+              >
+                <View style={{paddingLeft:110}}>
+                      <Text
+                        style={{ fontSize: 20, fontWeight: "bold", color: "#FFF" }} 
+                      >
+                        BARGANHAS
+                      </Text>
+                </View>
+                <View style={{flex:1, paddingLeft:10, paddingBottom:10}}>
+                      <Image style={{height:115, width:120,}} source={require("../../assets/SACOLAS.png")}/>
+                </View>
+                
+              </View>
+            </Pressable>
+          
         </View>
       </ScrollView>
     </SafeAreaView>
@@ -132,6 +163,6 @@ const styles = StyleSheet.create({
     backgroundColor: "#fff",
     alignItems: "center",
     justifyContent: "center",
-    paddingTop: 100,
+    paddingTop: 50,
   },
 });
