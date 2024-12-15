@@ -8,7 +8,7 @@ export default function Screen() {
   useEffect(() => {
     setTimeout(() => {
       router.replace("/home");
-    }, 2000);
+    }, 3000);
   }, []);
 
   return (

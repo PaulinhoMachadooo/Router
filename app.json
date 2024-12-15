@@ -1,43 +1,19 @@
 {
   "expo": {
-    "name": "p-loja-fulano",
-    "slug": "p-loja-fulano",
-    "version": "1.0.0",
-    "scheme": "p-loja-fulano",
-    "orientation": "portrait",
-    "icon": "./assets/icon.png",
-    "userInterfaceStyle": "light",
-    "splash": {
-      "image": "./assets/splash.png",
-      "resizeMode": "contain",
-      "backgroundColor": "#ffffff"
-    },
-    "ios": {
-      "supportsTablet": true
-    },
-    "android": {
-      "adaptiveIcon": {
-        "foregroundImage": "./assets/adaptive-icon.png",
-        "backgroundColor": "#ffffff"
-      }
-    },
-    "web": {
-      "favicon": "./assets/favicon.png"
-    },
-    "plugins": ["expo-router"],
-    "experiments": {
-      "typedRoutes": true
-    },
     "extra": {
       "eas": {
-        "projectId": "28116ee2-83fd-4d33-a7d4-0db55a6309d0"
+        "projectId": "dcec1399-f5cb-44de-b3ee-a2650b8bde6b"
       }
     },
     "runtimeVersion": {
       "policy": "appVersion"
     },
     "updates": {
-      "url": "https://u.expo.dev/28116ee2-83fd-4d33-a7d4-0db55a6309d0"
-    }
+      "url": "https://u.expo.dev/dcec1399-f5cb-44de-b3ee-a2650b8bde6b"
+    },
+    "android": {
+      "package": "com.paulinhomachado22.plojafulano"
+    },
+    "ios": {}
   }
 }

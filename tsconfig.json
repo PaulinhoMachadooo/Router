@@ -6,7 +6,7 @@
   "include": [
     "**/*.ts",
     "**/*.tsx",
-    ".expo/types/**/*.ts",
-    "expo-env.d.ts"
-, "components/TabBarButton.jsx", "components/TabBar.jsx"  ]
+    "components/TabBarButton.jsx",
+    "components/TabBar.jsx"
+  ]
 }
